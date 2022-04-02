@@ -97,7 +97,17 @@
          }
          textoMaiusculo();
 
+         //exercicio 6
+         //Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 
+            function todosParagrafos(){
+                let bloco = document.getElementsByTagName('p');
+
+                for (let i = 0; i < bloco.length; i += 1){
+                    console.log(bloco[i].innerHTML);
+                }
+            }
+            todosParagrafos();
 
     </script>
   </body>
