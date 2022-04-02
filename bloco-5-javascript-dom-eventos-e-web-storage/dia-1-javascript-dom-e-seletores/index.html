@@ -86,8 +86,18 @@
              let texto = document.getElementsByTagName('h1')[0];
              texto.innerText = 'Exercício 5.1 - JavaEscript';             
          }
-
          arrumaTexto();
+
+         //exercicio 5
+         //Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+
+         function textoMaiusculo() {
+             let textoGrande = document.getElementsByTagName('p')[0];
+             textoGrande.innerText = textoGrande.innerText.toUpperCase();
+         }
+         textoMaiusculo();
+
+
 
     </script>
   </body>
