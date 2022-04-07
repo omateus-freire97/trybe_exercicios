@@ -90,15 +90,22 @@
       k.appendChild(elementoSection3);
 
       // exercicio 7
-
       let foto = document.createElement('img');
       foto.className = 'small-image';
       foto.src = 'https://picsum.photos/200';
       elementoSection2.appendChild(foto);
 
       // exercicio 8
-      let lista = document.createElement('li');
-      
+      let lista = document.createElement('ul');
+      elementoSection3.appendChild(lista);
+
+      let valores = ['um', 'dois','três','quatro','cinco','seis','sete','oito','nove','dez'];
+      //adicionando o meu array valores dentro da lista
+      for(let numeros in valores){
+        let itemLi = document.createElement('li');
+        itemLi.innerHTML = valores[numeros];
+        lista.appendChild(itemLi);
+      }
 
     </script>
   </body>
