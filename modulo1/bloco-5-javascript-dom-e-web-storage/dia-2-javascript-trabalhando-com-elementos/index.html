@@ -101,11 +101,19 @@
 
       let valores = ['um', 'dois','três','quatro','cinco','seis','sete','oito','nove','dez'];
       //adicionando o meu array valores dentro da lista
+      // pelo que eu entendi na linha do for eu 
+      // criei uma vaiavel e preenchi ela com o meu array valores
+      //com os valores do meu array(valores)
+      //criei uma  variavel itemLi que cria elemento li dentro da lista
+      //depois peguei todo o html colection dele e inclui o array valores
+      // e o appencChild adiciona os elementos no html
       for(let numeros in valores){
         let itemLi = document.createElement('li');
         itemLi.innerHTML = valores[numeros];
         lista.appendChild(itemLi);
       }
+
+      
 
     </script>
   </body>
